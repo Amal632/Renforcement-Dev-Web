@@ -4,10 +4,14 @@ Note ton avancée après chaque TP. Reste factuel, sans données personnelles. C
 
 ## TP00 — Diagnostic
 
-- Hypothèse :
-- Action :
-- Résultat :
-- Point non compris :
+- Hypothèse : Le HTML, le CSS et le JavaScript contiennent plusieurs erreurs ou éléments incomplets qui peuvent provoquer des problèmes de structure, de mise en page et de fonctionnement des fonctions JavaScript.
+
+- Action : J’ai corrigé les trois fichiers. En HTML, j’ai vérifié la structure avec main, le titre principal, les titres de section, les étiquettes associées aux champs et le bouton du formulaire. En CSS, j’ai corrigé la gestion des boîtes avec box-sizing: border-box, remplacé les largeurs fixes par des largeurs souples et adapté la page aux petits écrans. En JavaScript, j’ai complété estValide() et extraireActifs() conformément aux consignes, puis j’ai testé les fonctions avec Node.js.
+
+- Résultat : La page s’affiche correctement, les champs et les textes restent lisibles sur une petite largeur d’environ 360 px et le JavaScript retourne les résultats attendus lors des tests avec Node.js.
+
+- Point non compris : Je comprends maintenant que le CSS n’a pas besoin d’être compilé et que le JavaScript peut être testé avec Node.js. Je n’ai pas de point particulier qui reste incompris. Je n’ai jamais fait du JS donc j’apprends toujours ce langage de programmation.
+
 
 ## TP01 — Démarrer
 
