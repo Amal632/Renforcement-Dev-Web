@@ -29,10 +29,11 @@ Note ton avancée après chaque TP. Reste factuel, sans données personnelles. C
 
 ## TP03 — Formulaire
 
-- Hypothèse :
-- Action :
-- Résultat :
-- Point non compris :
+## TP03 — Formulaire
+- Hypothèse : Dans un champ de texte multiligne (`textarea`), la touche Entrée crée un saut de ligne au lieu de soumettre directement le formulaire.
+- Action : J'ai ajouté le formulaire comprenant une étiquette, une zone de texte limitée à 280 caractères et un bouton de soumission. J'ai également copié le code JavaScript fourni dans `atelier/public/js/app.js`.
+- Résultat : Le formulaire fonctionne. Je peux saisir un message, utiliser la touche Entrée pour créer une nouvelle ligne, puis naviguer avec la touche Tabulation et valider le bouton de soumission avec la touche Entrée. Le statut affiche « Interface prête ; les réponses arrivent sur J2 ».
+- Points à éclaircir : Aucun.
 
 ## TP04 — Responsive
 
