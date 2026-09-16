@@ -15,20 +15,17 @@ Note ton avancée après chaque TP. Reste factuel, sans données personnelles. C
 
 ## TP01 — Démarrer
 
-- Hypothèse : Si le serveur fonctionne mais que le JavaScript ne se charge pas, la page HTML devrait quand même s’afficher, mais le statut géré par JavaScript ne devrait pas apparaître.
-
-- Action : J’ai vérifié la version de Node avec node --version, puis je suis allé dans le dossier atelier et j’ai lancé le serveur.
-
-- Résultat : Node est en version v24.21.0. La commande npm start a été bloquée par PowerShell car l’exécution des scripts était désactivée. J’ai donc utilisé npm.cmd start, qui a démarré correctement le serveur.
-
-- Point non compris : Rien
+- Hypothèse : Si le serveur est en cours d'exécution mais que le JavaScript ne se charge pas, la page HTML devrait tout de même s'afficher, mais l'état géré par le JavaScript ne devrait pas apparaître.
+- Action : J'ai vérifié la version de Node à l'aide de la commande `node --version`, puis je me suis rendu dans le dossier `atelier` et j'ai lancé `npm start`. Une première tentative a indiqué que le port 3000 était déjà utilisé. J'ai ensuite relancé le serveur depuis le dossier `atelier` et vérifié la page dans le navigateur.
+- Résultat : La version de Node est la v24.21.0. Le serveur fonctionne et la page est accessible à l'adresse http://127.0.0.1:3000. Le navigateur affiche « Cap Web » ainsi que le statut « The server is running. Today, we are building our interface. ». L'erreur `EADDRINUSE` était due au fait que le port 3000 était déjà utilisé.
+- Points à éclaircir : Aucun.
 
 ## TP02 — HTML
 
-- Hypothèse :
-- Action :
-- Résultat :
-- Point non compris :
+- Hypothèse : Si je remplace `main` par `div`, le rendu visuel devrait rester quasi identique avec le CSS actuel, mais la structure sémantique et les marqueurs d'accessibilité seraient modifiés.
+- Action : J'ai ajouté un `header` contenant le `h1`, une `section` avec un `h2` intitulé « Discussion », une liste vide pour les messages, le paragraphe d'état et un `footer` contenant la version.
+- Résultat : La page s'affiche correctement avec la nouvelle structure HTML. Le titre « Cap Web », le titre « Discussion », l'état et la version sont visibles.
+- Point non compris : Aucun.
 
 ## TP03 — Formulaire
 
