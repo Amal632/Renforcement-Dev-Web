@@ -15,10 +15,13 @@ Note ton avancée après chaque TP. Reste factuel, sans données personnelles. C
 
 ## TP01 — Démarrer
 
-- Hypothèse :
-- Action :
-- Résultat :
-- Point non compris :
+- Hypothèse : Si le serveur fonctionne mais que le JavaScript ne se charge pas, la page HTML devrait quand même s’afficher, mais le statut géré par JavaScript ne devrait pas apparaître.
+
+- Action : J’ai vérifié la version de Node avec node --version, puis je suis allé dans le dossier atelier et j’ai lancé le serveur.
+
+- Résultat : Node est en version v24.21.0. La commande npm start a été bloquée par PowerShell car l’exécution des scripts était désactivée. J’ai donc utilisé npm.cmd start, qui a démarré correctement le serveur.
+
+- Point non compris : Rien
 
 ## TP02 — HTML
 
