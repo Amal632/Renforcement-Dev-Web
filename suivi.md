@@ -48,6 +48,41 @@ Que se passe-t-il si un mot de 60 lettres se retrouve dans un conteneur étroit,
 
 - Problèmes/Remarques (tests à 360 px / 1280 px) : Aucun. La page a été vérifiée aux résolutions de 360 ​​px et 1280 px : aucun défilement horizontal, le champ de saisie était entièrement visible, le bouton était visible et le texte restait lisible.
 
+## TP05 — Revue
+
+* Hypothèse : Passer en revue les exercices terminés me permet de vérifier la cohérence des modifications apportées et d'identifier les points à revoir demain.
+
+* Action : J'ai passé en revue les exercices terminés et vérifié l'état final du fichier `atelier/public/index.html`. J'ai également mis à jour le journal de suivi en y consignant les hypothèses, les actions, les résultats et les points restés flous. J'ai vérifié les commandes Git utilisées ainsi que l'état local du projet.
+
+* Résultat : Les exercices fonctionnent comme prévu. La page présente une structure HTML accessible, un formulaire contenant une zone de texte (*textarea*) et un bouton, ainsi que les styles adaptatifs (*responsive*) issus du TP04. Les tests effectués aux résolutions de 360px et 1280px n'ont pas provoqué de défilement horizontal. Le formulaire et le bouton restent visibles et utilisables.
+
+* Points flous : Aucun point bloquant pour le moment.
+
+### Commandes testées
+
+* Depuis le répertoire `atelier/` :
+
+* `npm start` — lance le serveur local à l'adresse `http://127.0.0.1:3000/`.
+* `git status` — vérifie l'état des fichiers.
+* `git add public/index.html public/styles.css ../suivi.md` — prépare (*stage*) les fichiers du TP04 pour le commit.
+* `git commit -m "TP04 - responsive"` — crée le commit pour le TP04.
+* `git push` — envoie le commit vers la branche personnelle `travail/Amal632/j1`.
+
+* Erreur rencontrée précédemment : `EADDRINUSE` lors du lancement du serveur alors que le port 3000 était déjà utilisé. Le serveur a fonctionné correctement par la suite.
+
+### Auto-évaluation
+
+* Affichage : le rendu de la page est correct.
+* À 360px : pas de défilement horizontal ; le champ de saisie et le bouton restent entièrement visibles, et le texte demeure lisible.
+* À 1280px : la page reste centrée et lisible. * Navigation au clavier : la zone de texte permet d'utiliser la touche Entrée pour créer une nouvelle ligne ; le bouton est accessible via la touche Tabulation et peut être activé avec la touche Entrée.
+* Sujets à revoir issus du module de cours : approfondir la compréhension de Flexbox, de `box-sizing` et des règles de conception adaptative (*responsive design*) appliquées lors du TP04. ### Prévision
+
+Je prévois que le TP03 nécessitera le plus de retouches demain, notamment en ce qui concerne les fonctionnalités du formulaire et le code JavaScript.
+
+### Points à vérifier
+
+Je passerai en revue les modules du cours demain et vérifierai les concepts que je ne maîtrise pas encore tout à fait, en particulier la logique JavaScript du formulaire et les règles CSS pour le responsive design.
+
 
 ## Commandes essayées
 
@@ -59,19 +94,6 @@ git status
 git diff
 ```
 
-Mes essais :
-
-- Dossier :
-- Commande et résultat :
-- Problème exact si blocage :
-
-Si Node ou Git bloque, note le message exact et continue en local sans attendre. Le double-clic sur `diagnostic/index.html` ne remplace pas le serveur pour les modules et l'envoi du TP03.
-
-## Auto-revue finale
-
-- Ce qui s'affiche bien :
-- Ce qui reste fragile au clavier ou à 360 px :
-- Ce que je veux revoir en capsule :
 
 ## Rappel Git prudent
 
