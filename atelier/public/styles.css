@@ -1,2 +1,60 @@
-body { font-family: system-ui, sans-serif; margin: 2rem; color: #15213a; background: white; }
-main { max-width: 48rem; margin-inline: auto; }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  color: #15213a;
+  background: white;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+  max-width: 760px;
+  padding-inline: 1rem;
+  margin-inline: auto;
+}
+
+main {
+  margin-block: 2rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#chat-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 0.75rem;
+  font: inherit;
+  resize: vertical;
+}
+
+button {
+  align-self: flex-start;
+  padding: 0.6rem 1rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+ul {
+  padding-left: 1.5rem;
+  overflow-wrap: anywhere;
+}
+
+:focus-visible {
+  outline: 3px solid #15213a;
+  outline-offset: 3px;
+}

@@ -29,7 +29,6 @@ Note ton avancée après chaque TP. Reste factuel, sans données personnelles. C
 
 ## TP03 — Formulaire
 
-## TP03 — Formulaire
 - Hypothèse : Dans un champ de texte multiligne (`textarea`), la touche Entrée crée un saut de ligne au lieu de soumettre directement le formulaire.
 - Action : J'ai ajouté le formulaire comprenant une étiquette, une zone de texte limitée à 280 caractères et un bouton de soumission. J'ai également copié le code JavaScript fourni dans `atelier/public/js/app.js`.
 - Résultat : Le formulaire fonctionne. Je peux saisir un message, utiliser la touche Entrée pour créer une nouvelle ligne, puis naviguer avec la touche Tabulation et valider le bouton de soumission avec la touche Entrée. Le statut affiche « Interface prête ; les réponses arrivent sur J2 ».
@@ -37,10 +36,18 @@ Note ton avancée après chaque TP. Reste factuel, sans données personnelles. C
 
 ## TP04 — Responsive
 
-- Hypothèse :
-- Action :
-- Résultat :
-- Point non compris, test 360 / 1280 :
+Que se passe-t-il si un mot de 60 lettres se retrouve dans un conteneur étroit, sans règles de césure ?
+- Prédiction : un mot très long ne contenant aucun espace risque de dépasser la largeur du conteneur et de provoquer un débordement horizontal de la page.
+
+
+- Hypothèse : Un mot très long sans espaces pourrait dépasser la largeur d'un conteneur étroit et provoquer un défilement horizontal en l'absence de règle de césure.
+
+- Action : J'ai appliqué `box-sizing: border-box` à tous les éléments, rendu flexibles les sections d'en-tête, de contenu principal et de pied de page (largeur de 100 % avec un maximum de 760 px), supprimé la marge du `body`, ajouté des espacements ainsi qu'un état de focus visible, et disposé le formulaire en colonne à l'aide de Flexbox. J'ai temporairement ajouté deux mots très longs à la liste pour tester le comportement en cas de débordement.
+
+- Résultat : Les mots très longs restent dans les limites de la largeur de la page grâce à `overflow-wrap: anywhere`. Le formulaire reste lisible ; le champ de saisie et le bouton demeurent entièrement visibles. Après le test, j'ai retiré les éléments temporaires pour rétablir la liste vide.
+
+- Problèmes/Remarques (tests à 360 px / 1280 px) : Aucun. La page a été vérifiée aux résolutions de 360 ​​px et 1280 px : aucun défilement horizontal, le champ de saisie était entièrement visible, le bouton était visible et le texte restait lisible.
+
 
 ## Commandes essayées
 
